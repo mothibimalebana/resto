@@ -11,11 +11,15 @@ module.exports = {
   },
   devtool: "eval-source-map",
   devServer: {
-    watchFiles: ["./src/template.html"],
+    watchFiles: ["./src/template.html", "./src/menu.html"],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",
+    }), 
+    new HtmlWebpackPlugin({
+      filename: "menu.html",
+      template: "./src/menu.html",
     }),
   ],
   module: {
@@ -23,6 +27,14 @@ module.exports = {
         {
             test: /.css$/i,
             use: ["style-loader", "css-loader"]
+        },
+        {
+          test: /\.(woff|woff2|eot|ttf|otf)$/i,
+          type: 'asset/resource',
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
         }
     ]
   }
