@@ -112,3 +112,66 @@
     font-weight: 500;
     line-height: normal;
   }
+  #content{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10rem, 0.45fr));
+    gap: 9rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .contentLeft{
+    /**Layout**/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7.87rem;
+
+    /**Typography**/
+    color: #000;
+    font-family: "Libre Franklin";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .contentRight{
+    display: flex;
+    justify-content: center;
+  }
+  span{
+    color: #2A9D8F;
+  }
+  .contentButtons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .contentButtons> button{
+    font-size: 20px;
+    width: 10.3125rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+  }
+  .buttonLeft{
+    border-radius: 0.625rem;
+    border: #E76F51 ;
+    background: #E76F51;
+
+    color: #FFF;
+    font-family: "Libre Franklin";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .buttonRight{
+    border-radius: 0.625rem;
+    background-color: #FFF;
+    border: #FFF;
+  
+    color: #000000;
+    font-family: "Libre Franklin";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
