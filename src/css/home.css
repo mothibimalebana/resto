@@ -163,6 +163,9 @@
     font-weight: 400;
     line-height: normal;
   }
+  button:hover{
+    cursor: pointer;
+  }
   .buttonRight{
     border-radius: 0.625rem;
     background-color: #FFF;

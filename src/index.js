@@ -1,3 +1,4 @@
-import './css/home.css';
+/** DOM ELEMENTS: */
+const navRight = document.querySelector('.navRight')
 
-console.log("Hello world");
+
