@@ -5,10 +5,14 @@ const screenController = (function (){
     const navRight = document.querySelector('.navRight');
     const navLeft = document.querySelector('.navLeft');
 
-    const contentLeft = document.querySelector('.contentLeft')
+    const contentLeft = document.querySelector('.contentLeft'); //contentLetextContentft and its children
+    const textContent = document.querySelector('.textContent');
+    const contentButtons = document.querySelector('.contentButtons');
 
-    return{navLeft, navRight, contentLeft}
+    const contentRight = document.querySelector('.contentRight');
+
+    return{navLeft, navRight, contentLeft, contentRight, contentButtons}
 })();
 
-console.log(screenController.contentLeft)
+console.log(screenController.contentRight)
 
