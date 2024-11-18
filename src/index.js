@@ -1,4 +1,5 @@
 import './css/home.css'
+import korean_dish from './img/korean-dish.png';
 
 const homePage = (function (){
     /** DOM Elements: */
@@ -42,4 +43,10 @@ const homePage = (function (){
     contentLeft.appendChild(contentButtons);
     content.appendChild(contentLeft)
 
+    /**Content Right **/
+    const img = document.createElement("img");
+    const koreanDish = new Image();
+    koreanDish.src = korean_dish;
+    contentRight.appendChild(koreanDish);
+    content.appendChild(contentRight);
 })();
