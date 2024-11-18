@@ -4,15 +4,22 @@ const homePage = (function (){
     /** DOM Elements: */
     const content = document.querySelector('#content');
 
-    const contentLeft = document.querySelector('.contentLeft'); //contentLetextContentft and its children
-    const contentButtons = document.querySelector('.contentButtons');
+    const contentLeft = document.createElement("div"); //contentLetextContentft and its children
+    contentLeft.classList.add("contentLeft");
 
-    const contentRight = document.querySelector('.contentRight');//contentRight (only contains an img)
+    const textContent = document.createElement("div");
+    textContent.classList.add("textContent");
+
+    const contentButtons = document.createElement("div");
+    contentButtons.classList.add("contentButtons");
+
+
+    const contentRight = document.createElement('div');//contentRight (only contains an img)
+    contentRight.classList.add("contentRight");
 
     /**DOM Manipulation**/
     //contentLeft > textContent
-    const textContent = document.createElement("div");
-    textContent.classList.add("textContent");
+
     textContent.textContent = "Home made, healthy and";
     const textSpan = document.createElement("span"); // create span for text on content left
 
@@ -28,14 +35,11 @@ const homePage = (function (){
 
     //contentLeft > contentButtons > buttonRight
     const buttonRight = document.createElement("button");
-    buttonLeft.classList.add("buttonRight");
+    buttonRight.classList.add("buttonRight");
     buttonRight.textContent = "Local Menu";
     contentButtons.appendChild(buttonRight); //button added to parent in DOM
 
     contentLeft.appendChild(contentButtons);
     content.appendChild(contentLeft)
 
-    return{textContent}
 })();
-
-homePage.textContent
