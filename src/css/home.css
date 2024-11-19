@@ -112,7 +112,7 @@
     font-weight: 500;
     line-height: normal;
   }
-  #content{
+  .homeContainer{
     display: grid;
     grid-template-columns: repeat(2, minmax(10rem, 0.45fr));
     gap: 9rem;

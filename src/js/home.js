@@ -14,6 +14,9 @@ const homePage = (function (){
     const contentButtons = document.createElement("div");
     contentButtons.classList.add("contentButtons");
 
+    const homeContainer = document.createElement("div");
+    homeContainer.classList.add("homeContainer");
+
 
     const contentRight = document.createElement('div');//contentRight (only contains an img)
     contentRight.classList.add("contentRight");
