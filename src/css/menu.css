@@ -83,3 +83,42 @@
     align-items: center;
     background: #EFEFEF;
   }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navRight > h4{
+    /**Layout**/
+    width: 10.125rem;
+
+    /**Typography**/
+    color: #000;
+    font-family: Rancho;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .navLeft{
+    /**Layout**/
+    display: flex;
+    gap: 7.63rem;
+  
+  }
+  .navLeft>button{
+    border: none;
+    background: #FFF;
+
+    /**Typography**/
+    color: #000;
+    font-family: "Libre Franklin";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  #content{
+    display: flex;
+    flex-direction: column;
+  }
