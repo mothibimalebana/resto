@@ -3,8 +3,7 @@ import korean_dish from '../img/korean-dish.png';
 
 const homePage = (function (){
     /** DOM Elements: */
-    const content = document.querySelector('#content');
-
+    const content = document.getElementById("content")
     const contentLeft = document.createElement("div"); //contentLetextContentft and its children
     contentLeft.classList.add("contentLeft");
 
@@ -45,14 +44,15 @@ const homePage = (function (){
     contentButtons.appendChild(buttonRight); //button added to parent in DOM
 
     contentLeft.appendChild(contentButtons);
-    content.appendChild(contentLeft)
+    homeContainer.appendChild(contentLeft)
 
     /**Content Right **/
     const img = document.createElement("img");
     const koreanDish = new Image();
     koreanDish.src = korean_dish;
     contentRight.appendChild(koreanDish);
-    content.appendChild(contentRight);
+    homeContainer.appendChild(contentRight);
+    content.appendChild(homeContainer);
     }
 
     return{getHomePage}
