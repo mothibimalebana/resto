@@ -119,6 +119,6 @@
     line-height: normal;
   }
   #content{
-    display: flex;
+    display: grid;
     flex-direction: column;
   }
