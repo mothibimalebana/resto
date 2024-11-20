@@ -75,7 +75,9 @@ const menuPage = (function (){
         content.appendChild(menuContainer);
 
         // menuItems2
-        const vegan = new Image()
+        const vegan = new Image();
+        vegan.src = veganMeal;
+        menuImg2.appendChild(menuImg2);
     }
 
     return {getMenuPage}
