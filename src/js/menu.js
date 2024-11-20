@@ -98,8 +98,8 @@ const menuPage = (function (){
         menuContainer.appendChild(menuItems2);
     
         content.appendChild(menuContainer);
+        return content.innerHTML;
     }
-
     return {getMenuPage}
 })();
 
