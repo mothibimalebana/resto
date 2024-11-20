@@ -72,12 +72,32 @@ const menuPage = (function (){
         menuItems1.appendChild(menuImg1);
 
         menuContainer.appendChild(menuItems1);
-        content.appendChild(menuContainer);
 
         // menuItems2
         const vegan = new Image();
         vegan.src = veganMeal;
-        menuImg2.appendChild(menuImg2);
+        menuImg2.appendChild(vegan);
+    
+        const h6Content2 = document.createElement("h6");
+        h6Content2.textContent = "almuerzo";
+        const h3Content2 = document.createElement("h3");
+        h3Content2.textContent = "Sopa de Mani con garbanzo"
+        const pContent2 = document.createElement("p");
+        pContent2.textContent = "Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad" ;
+        const bContent2 = document.createElement("button");
+        bContent2.textContent = "order now";
+    
+        menuContent2.appendChild(h6Content2);
+        menuContent2.appendChild(h3Content2);
+        menuContent2.appendChild(pContent2);
+        menuContent2.appendChild(bContent2);
+    
+        menuItems2.appendChild(menuImg2);
+        menuItems2.appendChild(menuContent2);
+
+        menuContainer.appendChild(menuItems2);
+    
+        content.appendChild(menuContainer);
     }
 
     return {getMenuPage}
