@@ -1,5 +1,6 @@
 import '../css/home.css';
-import granola from "../img/granola.png";
+import granolaImg from "../img/granola.png";
+import veganMeal from "../img/vegan.png";
 
 const menuPage = (function (){
     /**DOM Elements */
@@ -32,6 +33,7 @@ const menuPage = (function (){
 
 
     function getMenuPage(){
+
         const headerH4 = document.createElement("h4");
         headerH4.textContent = "Menu";
         menuHeader.appendChild(headerH4);
@@ -42,6 +44,38 @@ const menuPage = (function (){
     
         menuContainer.appendChild(menuHeader);
         content.appendChild(menuContainer);
+    
+        // menuItems1: menuContent
+        const h6Content = document.createElement("h6");
+        h6Content.textContent = "desserts";
+        const h3Content = document.createElement("h3");
+        h3Content.textContent = "Greek Yoghurt with Strawberries"
+        const pContent = document.createElement("p");
+        pContent.textContent = "Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad" ;
+        const bContent = document.createElement("button");
+        bContent.textContent = "order now";
+
+        // menuItems1: menuImg1
+        const granola = new Image();
+        granola.src = granolaImg;
+        menuImg1.appendChild(granola);
+
+    
+        // appending for menuItems1
+        menuContent1.appendChild(h6Content);
+        menuContent1.appendChild(h3Content);
+        menuContent1.appendChild(pContent);
+        menuContent1.appendChild(bContent);
+
+        menuItems1.appendChild(menuContent1);
+    
+        menuItems1.appendChild(menuImg1);
+
+        menuContainer.appendChild(menuItems1);
+        content.appendChild(menuContainer);
+
+        // menuItems2
+        const vegan = new Image()
     }
 
     return {getMenuPage}
