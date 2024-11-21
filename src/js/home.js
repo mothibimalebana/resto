@@ -54,10 +54,10 @@ const homePage = (function (){
     contentRight.appendChild(koreanDish);
     homeContainer.appendChild(contentRight);
     content.appendChild(homeContainer);
-    return content;value
+    return content;
     }
 
     return{getHomePage}
 })();
 
-export const getHomePage = () => homePage.getHomePage();
+export const getHomePage = () => homePage.getHomePage().lastChild;

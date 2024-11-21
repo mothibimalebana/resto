@@ -95,9 +95,9 @@ const menuPage = (function (){
         menuContainer.appendChild(menuItems2);
     
         content.appendChild(menuContainer);
-        return {content, value};
+        return content;
     }
-    return getMenuPage
+    return {getMenuPage}
 })();
 
 export const getMenuPage = () => menuPage.getMenuPage();
