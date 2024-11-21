@@ -1,11 +1,10 @@
 import granolaImg from "../img/granola.png";
 import veganMeal from "../img/vegan.png";
+import '../css/menu.css';
 
 const menuPage = (function (){
     /**DOM Elements */
-
     const content = document.getElementById("content");
-
     const menuContainer = document.createElement("div");
     menuContainer.classList.add("menuContainer");
 
@@ -97,9 +96,12 @@ const menuPage = (function (){
         menuContainer.appendChild(menuItems2);
     
         content.appendChild(menuContainer);
-        return content.innerHTML;
+        return content;
     }
     return {getMenuPage}
 })();
 
 export const getMenuPage = () => menuPage.getMenuPage();
+
+
+

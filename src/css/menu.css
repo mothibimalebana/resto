@@ -48,7 +48,7 @@
     margin: 0 3.44rem;
     padding: 1.44rem 0;
   
-    background: #EFEFEF;
+    background: #FFF;
   }
   /*
     5. Improve media defaults
@@ -83,7 +83,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #EFEFEF;
+    background: #FFF;
   }
   nav{
     display: flex;
@@ -110,7 +110,7 @@
   }
   .navLeft>button{
     border: none;
-    background: #EFEFEF;
+    background: #FFF;
 
     /**Typography**/
     color: #000;

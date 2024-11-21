@@ -1,12 +1,24 @@
-import {}
+import { getHomePage } from "./js/home";
+import { getMenuPage } from "./js/menu";
 
-const screen = (function (){
+const screenController = (function (){
     const content = document.getElementById("content")
+    getHomePage();
 
     const homeButton = document.getElementById("home");
     const menuButton = document.getElementById("menu");
 
-    return {content}
+    homeButton.addEventListener("click", () => {
+        content.innerHTML = "";
+        getHomePage();
+    })
+    menuButton.addEventListener("click", () => {
+        content.innerHTML = "";
+        getMenuPage();
+
+    })
+
+    return {homeButton, menuButton}
 })();
 
-export const content = screen.content;
+console.log(screenController.menuButton)

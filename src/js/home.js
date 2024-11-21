@@ -1,8 +1,11 @@
+import "../css/home.css";
 import korean_dish from '../img/korean-dish.png';
+
 
 const homePage = (function (){
     /** DOM Elements: */
-    const content = document.getElementById("content")
+    const content = document.getElementById("content");
+
     const contentLeft = document.createElement("div"); //contentLetextContentft and its children
     contentLeft.classList.add("contentLeft");
 
@@ -52,6 +55,7 @@ const homePage = (function (){
     contentRight.appendChild(koreanDish);
     homeContainer.appendChild(contentRight);
     content.appendChild(homeContainer);
+    return content;
     }
 
     return{getHomePage}

@@ -7,4 +7,5 @@ module.exports = merge(common, {
   devServer: {
     watchFiles: ["./src/template.html", "./src/menu.html", "./src/css/home.css"],
   },
+  
 });
