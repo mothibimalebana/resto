@@ -31,7 +31,6 @@ const menuPage = (function (){
 
 
     function getMenuPage(){
-
         const headerH4 = document.createElement("h4");
         headerH4.textContent = "Menu";
         menuHeader.appendChild(headerH4);
@@ -96,9 +95,9 @@ const menuPage = (function (){
         menuContainer.appendChild(menuItems2);
     
         content.appendChild(menuContainer);
-        return content;
+        return {content, value};
     }
-    return {getMenuPage}
+    return getMenuPage
 })();
 
 export const getMenuPage = () => menuPage.getMenuPage();

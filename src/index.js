@@ -3,17 +3,17 @@ import { getMenuPage } from "./js/menu";
 
 const screenController = (function (){
     const content = document.getElementById("content")
-    getHomePage();
+    getMenuPage();
 
     const homeButton = document.getElementById("home");
     const menuButton = document.getElementById("menu");
 
     homeButton.addEventListener("click", () => {
-        content.innerHTML = "";
+        content.lastChild.remove();
         getHomePage();
     })
     menuButton.addEventListener("click", () => {
-        content.innerHTML = "";
+        content.lastChild.remove();
         getMenuPage();
 
     })

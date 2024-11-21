@@ -25,7 +25,6 @@ const homePage = (function (){
     /**DOM Manipulation**/
     //contentLeft > textContent
     function getHomePage(){
-
     textContent.textContent = "Home made, healthy and";
     const textSpan = document.createElement("span"); // create span for text on content left
 
@@ -55,7 +54,7 @@ const homePage = (function (){
     contentRight.appendChild(koreanDish);
     homeContainer.appendChild(contentRight);
     content.appendChild(homeContainer);
-    return content;
+    return content;value
     }
 
     return{getHomePage}
