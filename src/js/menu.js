@@ -30,7 +30,6 @@ const menuPage = (function (){
     menuImg2.classList.add("menuImg");
 
 
-    function getMenuPage(){
         const headerH4 = document.createElement("h4");
         headerH4.textContent = "Menu";
         menuHeader.appendChild(headerH4);
@@ -93,14 +92,8 @@ const menuPage = (function (){
         menuItems2.appendChild(menuContent2);
 
         menuContainer.appendChild(menuItems2);
-    
-        content.appendChild(menuContainer);
-        return content;
-    }
-    return {getMenuPage}
+        content.lastChild.remove();
+        return {menuContainer}
 })();
 
-export const getMenuPage = () => menuPage.getMenuPage();
-
-
-
+export const getMenuPage = () => menuPage.menuContainer;

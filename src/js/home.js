@@ -1,5 +1,6 @@
 import "../css/home.css";
 import korean_dish from '../img/korean-dish.png';
+import { getMenuPage } from "./menu";
 
 
 const homePage = (function (){
@@ -24,7 +25,7 @@ const homePage = (function (){
 
     /**DOM Manipulation**/
     //contentLeft > textContent
-    function getHomePage(){
+
     textContent.textContent = "Home made, healthy and";
     const textSpan = document.createElement("span"); // create span for text on content left
 
@@ -53,11 +54,8 @@ const homePage = (function (){
     koreanDish.src = korean_dish;
     contentRight.appendChild(koreanDish);
     homeContainer.appendChild(contentRight);
-    content.appendChild(homeContainer);
-    return content;
-    }
+    return {homeContainer}
 
-    return{getHomePage}
 })();
 
-export const getHomePage = () => homePage.getHomePage().lastChild;
+export const getHomePage = () => homePage.homeContainer;
