@@ -1,4 +1,3 @@
-import '../css/home.css';
 import granolaImg from "../img/granola.png";
 import veganMeal from "../img/vegan.png";
 

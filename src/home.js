@@ -1,4 +1,3 @@
-import "../css/home.css"
 import korean_dish from '../img/korean-dish.png';
 
 const homePage = (function (){

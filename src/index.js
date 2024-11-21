@@ -1,5 +1,4 @@
-import { getHomePage } from "./js/home";
-import { getMenuPage } from "./js/menu";
+import {}
 
 const screen = (function (){
     const content = document.getElementById("content")
@@ -7,6 +6,7 @@ const screen = (function (){
     const homeButton = document.getElementById("home");
     const menuButton = document.getElementById("menu");
 
+    return {content}
 })();
 
-console.log(getMenuPage);
+export const content = screen.content;

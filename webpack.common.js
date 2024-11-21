@@ -26,7 +26,7 @@ module.exports = {
     new HtmlWebpackPlugin({
         title: "resto",
         filename: "menu.html",
-        template: "./src/template.html",
+        template: "./src/menu.html",
       }),
   ],
   module: {
